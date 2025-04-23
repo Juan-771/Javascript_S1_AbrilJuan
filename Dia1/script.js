@@ -7,27 +7,27 @@ alert("Bienvenido a CampusLands");
 
 const opcion = prompt(
     "Por favor, selecciona tu rol:\n" +
-    "1. Estudiante\n" +
+    "1. Camper\n" +
     "2. Trainer\n" +
     "3. Coordinador"
 );
 
 // Funciones para los distintos menús
-function menuEstudiante() {
-    alert("Bienvenido Camper!\n1. Iniciar Sesion\n");
+function menuCamper() {
+    alert("Bienvenido Camper!\n1. Iniciar Sesion\n2. Registrarse");
 }
 
 function menuTrainer() {
-    alert("Menú del Trainer\nDame tu ID\n");
+    alert("Menú del Trainer\n1. Dame tu ID\n2. Ver Campers");
 }
 
 function menuCoordinador() {
-    alert("Menú del Coordinador\n1. Dame tu ID\n ");
+    alert("Menú del Coordinador\n1. Dame tu ID\n2. Ver Campers\n3. Ver Trainers ");
 }
 
 // Redirigir al menú correspondiente
 if (opcion === "1") {
-    menuEstudiante();
+    menuCamper();
 } else if (opcion === "2") {
     menuTrainer();
 } else if (opcion === "3") {

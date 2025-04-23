@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pokédex AJAX</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="pokedex">
+        <div class="screen" id="screen">
+            <img id="sprite" src="" alt="pokemon">
+            <div class="info" id="pokeInfo">Loading...</div>
+            <input type="text" id="searchInput" placeholder="Name or Number">
+        </div>
+        <div class="controls">
+            <button onclick="prevPokemon()">Prev &lt;</button>
+            <button onclick="nextPokemon()">Next &gt;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
