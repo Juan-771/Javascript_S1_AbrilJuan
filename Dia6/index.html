@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balatro</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Balatro</h1>
+            <p>¡Gana quien tenga la carta de mayor valor!</p>
+        </header>
+
+        <div class="game-info">
+            <div>
+                <h2>Rondas jugadas: <span id="rounds">0</span></h2>
+                <p>Cartas restantes: <span id="remaining-cards">0</span></p>
+            </div>
+            <div>
+                <h2>Puntuación</h2>
+                <p>Jugador: <span id="player-score">0</span> | Computadora: <span id="computer-score">0</span></p>
+            </div>
+        </div>
+
+        <div class="result" id="result"></div>
+
+        <div class="cards-container">
+            <div class="player-section">
+                <h2>Tu carta</h2>
+                <div id="player-card" class="card-placeholder">?</div>
+                <div id="player-card-value" class="card-value"></div>
+            </div>
+            <div class="player-section">
+                <h2>Carta de la computadora</h2>
+                <div id="computer-card" class="card-placeholder">?</div>
+                <div id="computer-card-value" class="card-value"></div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="new-game-btn" class="new-game">Nuevo Juego</button>
+            <button id="draw-card-btn" disabled>Robar Carta</button>
+        </div>
+
+        <div class="instructions">
+            <h2>Instrucciones</h2>
+            <ul>
+                <li>Haz clic en "Nuevo Juego" para comenzar una partida.</li>
+                <li>Haz clic en "Robar Carta" para sacar una carta del mazo.</li>
+                <li>La computadora también robará una carta.</li>
+                <li>Quien tenga la carta de mayor valor gana la ronda.</li>
+                <li>El As es la carta de mayor valor, seguido de K, Q, J, 10, etc.</li>
+                <li>¡Juega hasta que se acaben las cartas del mazo!</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
