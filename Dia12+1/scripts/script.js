@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     const addTaskButton = document.getElementById('newTask');
 
     async function fetchData(){
-        const res = await fetch('https://66df3340de4426916ee3dd7e.mockapi.io/tareas');
+        const res = await fetch('https://68179af726a599ae7c3ae473.mockapi.io/tareas');
         data = await res.json();
         return data;
     }
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         
         const id=event.target.getAttribute('data-id');
         console.log(id);
-        await fetch(`https://66df3340de4426916ee3dd7e.mockapi.io/tareas/${id}`,{
+        await fetch(`https://68179af726a599ae7c3ae473.mockapi.io/tareas/${id}`,{
             method:'PUT',
             headers:{
                 'Content-Type':'application/json'
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     async function botonEliminado(event){
         const id=event.target.getAttribute('data-id');
         console.log(id);
-        await fetch(`https://66df3340de4426916ee3dd7e.mockapi.io/tareas/${id}`,{
+        await fetch(`https://68179af726a599ae7c3ae473.mockapi.io/tareas/${id}`,{
             method:'DELETE'});
         const data = await fetchData();
         displayCapsula(data);
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded',()=>{
             return true;
         }
         else{
-            await fetch(`https://66df3340de4426916ee3dd7e.mockapi.io/tareas/`,{
+            await fetch(`https://68179af726a599ae7c3ae473.mockapi.io/tareas/`,{
                 method:'POST',
                 headers:{
                     'Content-Type':'application/json'
