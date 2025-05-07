@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareita</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                Mis Heroes
+            </div>
+            <div class="card-body">
+                <h2>Gestión de Heroes</h2>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombrePersonaje">Nombre Personaje</label>
+                        <input type="text" id="nombrePersonaje" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="nombreActor">Nombre Actor</label>
+                        <input type="text" id="nombreActor" class="form-control">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="edadActor">Edad Actor</label>
+                        <input type="number" id="edadActor" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="ubicacion">Ubicación</label>
+                        <input type="text" id="ubicacion" class="form-control">
+                    </div>
+                </div>
+                
+                <div class="form-group full-width">
+                    <label for="ciudadOrigen">Nombre de la ciudad de origen</label>
+                    <input type="text" id="ciudadOrigen" class="form-control">
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="poster">Poster</label>
+                        <input type="text" id="poster" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha">Ubicación</label>
+                        <input type="date" id="fecha" class="form-control" placeholder="dd/mm/yyyy">
+                    </div>
+                </div>
+                
+                <div class="form-group full-width">
+                    <label for="productora">Productora</label>
+                    <select id="productora" class="form-control">
+                        <option value="marvel">Marvel</option>
+                        <option value="dc">DC</option>
+                        <option value="otros">Otros</option>
+                    </select>
+                </div>
+                
+                <div class="button-group">
+                    <button class="btn btn-dark">Nuevo Heroe</button>
+                    <button class="btn btn-primary">Guardar Heroe</button>
+                    <button class="btn btn-light">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script/script.js"></script>
+</html>
