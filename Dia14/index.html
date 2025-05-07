@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tareita</title>
+    <title>Gestión de Héroes</title>
     <link rel="stylesheet" href="./style/style.css">
 </head>
-
 <body>
     <div class="container">
         <div class="card">
@@ -16,58 +14,78 @@
             </div>
             <div class="card-body">
                 <h2>Gestión de Heroes</h2>
-
+                
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="nombrePersonaje">Nombre Personaje</label>
-                        <input type="text" id="nombrePersonaje" class="form-control">
+                        <label for="personaje">Nombre Personaje</label>
+                        <input type="text" id="personaje" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label for="nombreActor">Nombre Actor</label>
-                        <input type="text" id="nombreActor" class="form-control">
+                        <label for="actor">Nombre Actor</label>
+                        <input type="text" id="actor" class="form-control">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="edad">Edad Actor</label>
+                        <input type="number" id="edad" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="Ubicacion">Ubicación</label>
+                        <input type="text" id="Ubicacion" class="form-control">
+                       <h6>Nombre de la ciudad de origen</h6> 
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="edadActor">Edad Actor</label>
-                        <input type="number" id="edadActor" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="ubicacion">Ubicación</label>
-                        <input type="text" id="ubicacion" class="form-control">
-                        <h6>Nombre De La Ciudad De Origen</h6>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="poster">Poster</label>
-                        <input type="text" id="poster" class="form-control">
+                        <label for="Poster">Poster</label>
+                        <input type="text" id="Poster" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="fecha">Ubicación</label>
                         <input type="date" id="fecha" class="form-control" placeholder="dd/mm/yyyy">
                     </div>
                 </div>
-
+                
                 <div class="form-group full-width">
-                    <label for="productora">Productora</label>
-                    <select id="productora" class="form-control">
+                    <label for="Productora">Productora</label>
+                    <select id="Productora" class="form-control">
                         <option value="marvel">Marvel</option>
                         <option value="dc">DC</option>
                         <option value="otros">Otros</option>
                     </select>
                 </div>
-
+                
+                <!-- Sección de Registro de Trajes (inicialmente oculta) -->
+                <div id="registroTrajes" class="trajes-section" style="display: none;">
+                    <div class="card">
+                        <div class="card-header">
+                            Registro de Trajes
+                        </div>
+                        <div class="card-body">
+                            <h3 class="trajes-title">Trajes del personaje</h3>
+                            <p class="trajes-description">En esta sección podrá registrar los nombres de los trajes usados por el actor en cada una de las películas.</p>
+                            
+                            <div id="trajesList">
+                                <!-- Aquí se añadirán dinámicamente los trajes -->
+                            </div>
+                            
+                            <button id="addTraje" class="btn btn-add">+</button>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="button-group">
-                    <button class="btn btn-dark">Nuevo Heroe</button>
-                    <button class="btn btn-primary">Guardar Heroe</button>
-                    <button class="btn btn-light">Cancelar</button>
+                    <button id="nuevoHeroe" class="btn btn-dark">Nuevo Heroe</button>
+                    <button id="guardarHeroe" class="btn btn-primary">Guardar Heroe</button>
+                    <button id="cancelar" class="btn btn-light">Cancelar</button>
                 </div>
             </div>
         </div>
     </div>
-</body>
-<script src="./script/script.js"></script>
 
+    <script src="./script/script.js"></script>
+</body>
 </html>
