@@ -68,13 +68,13 @@ document.addEventListener("DOMContentLoaded", () => {
   
       // Recopilar datos del formulario
       const heroe = {
-        nombrePersonaje: document.getElementById("personaje").value,
-        nombreActor: document.getElementById("actor").value,
-        edadActor: document.getElementById("edad").value,
-        ubicacion: document.getElementById("Ubicacion").value,
-        poster: document.getElementById("Poster").value,
+        personaje: document.getElementById("personaje").value,
+        actor: document.getElementById("actor").value,
+        edad: document.getElementById("edad").value,
+        Ubicacion: document.getElementById("Ubicacion").value,
+        Poster: document.getElementById("Poster").value,
         fecha: document.getElementById("fecha").value,
-        productora: document.getElementById("Productora").value,
+        Productora: document.getElementById("Productora").value,
         trajes: [],
       }
   
@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     // Función para limpiar el formulario
     function limpiarFormulario() {
-      document.getElementById("Personaje").value = ""
+      document.getElementById("personaje").value = ""
       document.getElementById("actor").value = ""
       document.getElementById("edad").value = ""
       document.getElementById("Ubicacion").value = ""
