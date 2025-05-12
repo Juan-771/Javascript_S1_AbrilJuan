@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PACOPETS - Adopción de Mascotas</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <!-- Fuente opcional: puedes usar una fuente de Google si lo deseas -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Barra lateral -->
+        <div class="sidebar">
+            <div class="sidebar-item">
+                <div class="icon search-icon"></div>
+                <span>Buscar</span>
+            </div>
+            <div class="sidebar-item">
+                <div class="icon filter-icon"></div>
+                <span>Filtrar</span>
+            </div>
+            <div class="sidebar-item">
+                <div class="icon favorites-icon"></div>
+                <span>Favoritos</span>
+            </div>
+        </div>
+
+        <!-- Contenido principal -->
+        <div class="main-content">
+            <!-- Encabezado -->
+            <header class="header">
+                <div class="logo-container">
+                    <img src="./storage/img/descarga.png" alt="PACOPETS Logo" class="logo">
+                </div>
+                <div class="search"><input id="esto" type="text" placeholder="Buscar..."></div>
+                <nav class="navigation">
+                    <a href="#" class="nav-link">INICIO</a>
+                </nav>
+            </header>
+
+            <!-- Tarjeta de mascota -->
+            <main class="pet-container">
+                <div class="pet-card">
+                    <div class="pet-image-container">
+                        <img src="" alt="Gato anaranjado llamado Michi" class="pet-image">
+                    </div>
+                    <div class="pet-info">
+                        <div class="pet-detail">
+                            <h2>Nombre: Michi</h2>
+                        </div>
+                        <div class="pet-detail">
+                            <h3>Especie: Gato</h3>
+                        </div>
+                        <div class="pet-detail">
+                            <h3>Raza: Anaranjado</h3>
+                        </div>
+                        <div class="pet-detail">
+                            <h3>Edad: Cachorro</h3>
+                        </div>
+                        <div class="pet-detail">
+                            <h3>Ubicacion: Bucaramanga</h3>
+                        </div>
+                        <div class="pet-action">
+                            <button class="see-more-btn">Ver Mas...</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+<script src="./script/script.js"></script>
+</html>
